@@ -64,6 +64,16 @@ body {
 
 }
 
+/* font to be used */
+
+@font-face {
+	font-family: GothRegular;
+	src: url(/assets/routed-goth/routed-gothic.ttf);
+}
+
+/* font styles end */
+
+
 /* ✅ GIF background only on index page */
 body.index {
 	background: url('/assets/images/printer.gif') no-repeat center center fixed;
@@ -79,6 +89,7 @@ body.index {
   
 
 .intro-button {
+	font-family: GothRegular;
 	display: flex;
     align-items: center;      /* Vertically center text within button */
     justify-content: center;   /* Center content horizontally */
@@ -96,3 +107,5 @@ body.index {
     transition: background-color 0.3s, transform 0.3s;
 
 }
+
+
