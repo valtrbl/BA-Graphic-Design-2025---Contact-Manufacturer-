@@ -49,6 +49,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+button {
+	background: none;
+	border: none;
+}
 
 /* Reset some default browser styles */
 body {
@@ -59,8 +63,6 @@ body {
     margin: 0;
     padding: 0;
 	background-color: black;
-	
-    
 
 }
 
