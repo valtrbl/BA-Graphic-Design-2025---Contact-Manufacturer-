@@ -50,6 +50,11 @@ table {
 	border-spacing: 0;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
 /* Reset some default browser styles */
 body {
     font-family: 'sofia-pro-soft', sans-serif;
@@ -107,3 +112,120 @@ body.index {
 }
 
 
+/* image button */
+
+.image-button-wrapper {
+	display: inline-block;
+	text-align: center;
+	margin: 10px;
+  }
+  
+  .image-button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+  }
+  
+  .image-button:hover {
+	transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .image-button-img {
+	width: 400px;
+	height: 400px;
+	object-fit: contain;
+	display: block;
+	cursor: move;
+  }
+  
+/* image button end */
+
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+
+
+/* Flex container for student-info */
+.student-info {
+    display: flex;
+    
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between image and text */
+    background: transparent;
+    /* box-shadow: inset 1px 4px 4px #f2f2f2; */
+    margin: 10px 0px;
+    padding: 20px;
+    border-radius: 0.5px;;
+    max-width: 40vw;
+}
+
+.student-profile {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 2rem;
+	max-width: 2000px;
+	margin: 0 auto;
+  }
+  
+  .student-info {
+	flex: 1 1 30%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	
+  }
+  
+  .student-name {
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: GothRegular;
+	color: white;
+  }
+  
+  .project-title{
+	font-size: 1.5rem;
+	color: white;
+	font-family: GothRegular;
+  }
+
+  .student-caption {
+	font-size: 1.2rem;
+	color: #555;
+	font-family: GothRegular;
+	
+  }
+  
+  .student-link {
+	color: #0077cc;
+	text-decoration: none;
+	font-family: GothRegular;
+	font-weight: bold;
+  }
+  
+  .student-link:hover {
+	text-decoration: underline;
+  }
+  
+  .student-gallery {
+	flex: 1 1 65%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+  }
+  
+  .student-img {
+	width: 100%;
+	height: auto;
+	/* border: 1px solid #ccc; */
+	border-radius: 8px;
+	object-fit: cover;
+  }
+  
