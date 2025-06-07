@@ -7,18 +7,14 @@ pageType: student1
 ---
 
 <div class="student-profile">
+  {% for student in students %}
   <!-- Student info and website -->
   <div class="student-info">
-    <h1 class="student-name">Valinnie Crasto</h1>
-    <h2 class="project-title">There's Food At Home</h2>
-    <p class="student-caption">Where is home for you? Is it a place? A person? An Object? <br><br>
-
-In a world of movement and migration, the definition of home has become rather personal and layered. For some people, home may be a physical place, for others, it's a memory, a person, a scent or even food. Is home considered a simple location, or is it more than this? Does it move with us and live within small parts of our daily lives?<br><br>
-
-"There's Food At Home' is an embroidered textile piece (tablecloth) & publication exploring the connection between home, migration and how food can evoke memories of this. It explores individuals' definitions of the term 'home' and what it means for them personally. The tablecloth symbolising a space of community, sharing and care for each other and the bringing together of different experiences.<br><br>
-
-The project consists of research, interviews and workshops exploring food as a catalyst of memory and belonging and archives them onto the tablecloth and zine to be shared to others.</p>
-    <a href="https://valinnie.co.uk" class="student-link" target="_blank">valinnie.co.uk</a>
+    <h1 class="student-name">{{ student.Name }}</h1>
+    <h2 class="project-title">{{ student.Title }}</h2>
+    <p class="student-caption">{{ student.Caption }}</p>
+    <a href="{{ student.Website }}" class="student-link" target="_blank">{{ student.Website }}</a>
+    <p class="student-link">Instagram: {{ student.Instagram }}</p>
   </div>
 
   <!-- images -->
@@ -28,4 +24,6 @@ The project consists of research, interviews and workshops exploring food as a c
     <img src="/assets/printer-parts-transparent/1.png" alt="Project image 3" class="student-img">
     <!-- Add up to 5 images -->
   </div>
+
+  {% endfor %}
 </div>

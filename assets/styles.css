@@ -137,7 +137,7 @@ body.index {
 	height: 300px;
 	object-fit: contain;
 	display: block;
-	cursor: move;
+	/* cursor: move; */
   }
 
   .image-caption {
