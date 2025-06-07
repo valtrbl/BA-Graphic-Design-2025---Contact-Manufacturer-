@@ -9,139 +9,37 @@ pageType: parts
 <div class="intro-text">
 
 <h1 class="title-name">*Contact Manufacterer*</h1>
-<p class="intro-caption">caption goes here</p>
+<p class="intro-caption"><br>Welcome to “Contact Manufacturer,” the 2025 BA Graphic Design Degree Show at UAL Camberwell. 
+    This year's exhibition celebrates the culmination of our time here, infused with the identity we've chosen to embrace: the broken printer. 
+    Yes, a printer. That glorious machine that's always just about to jam, run out of ink, or inexplicably refuse to cooperate right when you need it most.<br><br>
+    Throughout our course, these printers have become an unlikely symbol of our shared experience. They've taught us patience, resilience, and adaptability that every designer inevitably develops. 
+    Every “Replace Toner” message felt like a shared cry for help, and every jammed sheet was a reminder that nothing, not even technology, 
+    can ever be fully trusted. Our identity this year is built around this comedic tragedy. The exhibition's central motif, broken printers, 
+    embodies the reality of being an up-and-coming designer. With limited budgets and big dreams, we've often relied on second-hand, half-dead printers to produce our work. 
+    It's the rite of passage no one talks about: that tiny Epson or Inkjet on its last legs, spewing streaky lines and suspicious rattles, holding our final project hostage in its paper tray. We've all been there—so we decided to own it.
+    
+    </p>
 
 </div>
 
 
-<div>
+<div class="image-grid">
+{% set imageCount = 8 %}
+{% for student in students %}
+{% set imageNumber = loop.index0 % imageCount + 1 %}
+ 
+
+{# 1 #}
 
  <a href="/student1" class="image-button-wrapper">
 <button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/1.png" 
+    <img src="/assets/printer-parts-transparent/{{ imageNumber }}.png" 
     alt="student1" 
     class="image-button-img">
+    <p class="image-caption">Contact ({{ student.Name }})</p>    
     </button>
 </a>
+{% endfor %}
 
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/2.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/3.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/4.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/5.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/6.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/7.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/8.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/1.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/2.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/3.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/4.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/5.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/6.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/7.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
-
- <a href="/student1" class="image-button-wrapper">
-<button type= "button" class="image-button">
-    <img src="/assets/printer-parts-transparent/8.png" 
-    alt="student1" 
-    class="image-button-img">
-    </button>
-</a>
 
 </div>
