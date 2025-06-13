@@ -392,6 +392,7 @@ body.index {
 	margin: 0;
 	padding-left: 30px;
 	padding-right: 30px;
+	text-decoration: none;
   }
 
   /* Hide hamburger (last li) by default */
@@ -418,5 +419,16 @@ body.index {
   }
 
 
-  
+  /* remove underline */
+  .topnav a,
+.sidebar a {
+  text-decoration: none;
+}
+
+
+body.index nav {
+	display: none;
+  }
+
+
   
