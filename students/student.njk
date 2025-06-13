@@ -1,0 +1,28 @@
+---
+layout: layout.njk
+pagination:
+  data: students   # the name of your students array
+  size: 1
+  alias: student
+permalink: "student/{{ student.Name | slug }}/index.html"
+title: "{{ student.Name }}"
+pageType: student
+---
+
+<div class="student-profile">
+  <div class="student-info">
+    <h1 class="student-name">{{ student.Name }}</h1>
+    <h2 class="project-title">{{ student.Title }}</h2>
+    <p class="student-caption">{{ student.Caption }}</p>
+    <a href="{{ student.Website }}" class="student-link" target="_blank">{{ student.Website }}</a>
+    <p class="student-link">Instagram: {{ student.Instagram }}</p>
+  </div>
+
+  <div class="student-gallery">
+    {% if student.Add %}
+      {% for img in student.Add %}
+        <img src="{{ img }}" alt="{{ student.Name }} project image" class="student-img" />
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

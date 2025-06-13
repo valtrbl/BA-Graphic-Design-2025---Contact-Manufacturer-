@@ -1,10 +1,9 @@
-function showSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'flex'
+function showSidebar() {
+  document.getElementById('sidebar').classList.add('active');
 }
-function hideSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
+
+function hideSidebar() {
+  document.getElementById('sidebar').classList.remove('active');
 }
 
 // function toggleMenu() {

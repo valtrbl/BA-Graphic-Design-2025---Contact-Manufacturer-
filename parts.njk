@@ -8,7 +8,7 @@ pageType: parts
 
 <div class="intro-text">
 
-<h1 class="title-name">*Contact Manufacterer*</h1>
+{# <a href="/parts" class="title-name">*Contact Manufacterer*</a> #}
 <p class="intro-caption"><br>Welcome to “Contact Manufacturer,” the 2025 BA Graphic Design Degree Show at UAL Camberwell. 
     This year's exhibition celebrates the culmination of our time here, infused with the identity we've chosen to embrace: the broken printer. 
     Yes, a printer. That glorious machine that's always just about to jam, run out of ink, or inexplicably refuse to cooperate right when you need it most.<br><br>
@@ -24,14 +24,16 @@ pageType: parts
 
 
 <div class="image-grid">
-{% set imageCount = 8 %}
+{% set imageCount = 61 %}
 {% for student in students %}
 {% set imageNumber = loop.index0 % imageCount + 1 %}
  
 
 {# 1 #}
 
- <a href="/student1" class="image-button-wrapper">
+<a href="/student/{{ student.Name | slug }}/" class="image-button-wrapper">
+
+ {# <a href="/student1" class="image-button-wrapper"> #}
 <button type= "button" class="image-button">
     <img src="/assets/printer-parts-transparent/{{ imageNumber }}.png" 
     alt="student1" 
