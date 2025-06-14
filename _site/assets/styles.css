@@ -280,7 +280,9 @@ body.index {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 2rem; */
-	padding: 3rem;
+	padding: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 	max-width: 1300px;
 	margin: 0 auto;
   }
