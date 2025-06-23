@@ -389,7 +389,7 @@ body.index {
 	display: flex;
 	justify-content: space-between; /* Spreads first and last items */
 	align-items: center;
-	padding: 1rem;
+	padding: 1r;
 	list-style: none;
 	margin: 0;
 	padding-left: 30px;
