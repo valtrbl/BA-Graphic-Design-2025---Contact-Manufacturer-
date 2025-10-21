@@ -244,15 +244,15 @@ body.index {
   }
   
   .student-link {
-	color: #0077cc;
+	color: #fff;
 	text-decoration: none;
 	font-family: GothRegular;
 	font-weight: bold;
   }
   
-  .student-link:hover {
+  /* .student-link:hover {
 	text-decoration: underline;
-  }
+  } */
   
   .student-gallery {
 	display: grid;
@@ -389,7 +389,7 @@ body.index {
 	display: flex;
 	justify-content: space-between; /* Spreads first and last items */
 	align-items: center;
-	padding: 1r;
+	padding: 1rem;
 	list-style: none;
 	margin: 0;
 	padding-left: 30px;

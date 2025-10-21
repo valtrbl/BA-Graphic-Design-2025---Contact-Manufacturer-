@@ -1,11 +1,11 @@
 ---
 layout: layout.njk
 pagination:
-  data: students   # the name of your students array
+  data: students  
   size: 1
   alias: student
 permalink: "student/{{ student.Name | slug }}/index.html"
-title: "{{ student.Name }}"
+title: Contact Manufacturer
 pageType: student
 ---
 
@@ -14,8 +14,12 @@ pageType: student
     <h1 class="student-name">{{ student.Name }}</h1>
     <h2 class="project-title">{{ student.Title }}</h2>
     <p class="student-caption">{{ student.Caption }}</p>
-    <a href="{{ student.Website }}" class="student-link" target="_blank">{{ student.Website }}</a>
-    <p class="student-link">Instagram: {{ student.Instagram }}</p>
+    {% if student.Website %}
+      <a href="{{ student.Website }}" class="student-link" target="_blank">{{ student.Website }}</a>
+    {% endif %}
+    {% if student.Instagram %}
+      <p class="student-link">Instagram: <a href="https://www.instagram.com/{{student.Instagram}}" class="student-link" target="_blank">@{{ student.Instagram }}</a></p>
+    {% endif %}
   </div>
 
   <div class="student-gallery">
